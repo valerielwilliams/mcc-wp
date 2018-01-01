@@ -35,7 +35,7 @@ if (!defined('DB_PASSWORD')) {
 	define('DB_PASSWORD', 'JyfF,trKbgHm');
 }
 if (!defined('DB_HOST')) {
-	define('DB_HOST', 'localhost');
+	define('DB_HOST', '37.60.244.171');
 }
 
 /** Database Charset to use in creating database tables. */
@@ -92,6 +92,8 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
+
+define('WP_ALLOW_REPAIR', true);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
