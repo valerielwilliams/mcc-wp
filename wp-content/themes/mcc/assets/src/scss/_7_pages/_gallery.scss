@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    GALLERY
+\*------------------------------------*/
+
+.gallery_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-items: center;
+
+}
+
+.gallery_wrapper $images {
+    @include breakpoint(smaller-screen) {
+        width: 95%;
+    }
+
+    @include breakpoint(portrait) {
+        width: 95%;
+    }
+
+    @include breakpoint(small) {
+        width: 95%;
+    }
+
+    @include breakpoint(large-mobile) {
+        width: 95%;
+    }
+
+    @include breakpoint(mobile) {
+        width: 95%;
+    }
+}

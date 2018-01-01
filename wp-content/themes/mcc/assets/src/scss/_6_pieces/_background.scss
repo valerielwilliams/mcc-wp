@@ -1,0 +1,943 @@
+/*------------------------------------*\
+    BACKGROUND IMAGES
+\*------------------------------------*/
+/* Home Page */
+
+div.hero_container.home img {
+    /*background: url(../img/closet_home.jpg) center center;
+    background-size: cover;*/
+    height: 600px;
+
+    @include breakpoint(medium) {
+        height: 500px;
+    }
+    @include breakpoint(landscape) {
+        height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        height: 375px;
+    }
+
+    @include breakpoint(small) {
+        height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+        height: 175px;
+    }
+
+}
+
+div.hero_container.home h1 {
+    position: absolute;
+    top: 22%;
+    left: 22%;
+
+
+    @include breakpoint(medium) {
+        top: 19%;
+        left: 20%;
+    }
+    @include breakpoint(landscape) {
+        top: 19%;
+        left: 19%;
+    }
+
+    @include breakpoint(smaller-screen) {
+        top: 17%;
+        left: 17%;
+    }
+
+    @include breakpoint(portrait) {
+        top: 17%;
+        left: 17%;
+    }
+
+    @include breakpoint(small) {
+        top: 13%;
+        left: 17%;
+    }
+
+    @include breakpoint(large-mobile) {
+        top: 12%;
+        left: 16%;
+    }
+
+    @include breakpoint(mobile) {
+        top: 12%;
+        left: 10%;
+    }
+
+}
+
+
+.mySlides {
+    display:none;
+    }
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $putty;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.6s ease;
+
+  @include breakpoint(medium) {
+      height: 12px;
+      width: 12px;
+  }
+
+  @include breakpoint(landscape) {
+      height: 12px;
+      width: 12px;
+  }
+
+  @include breakpoint(smaller-screen) {
+      height: 10px;
+      width: 10px;
+  }
+
+  @include breakpoint(portrait) {
+      height: 9px;
+      width: 9px;
+  }
+
+  @include breakpoint(large-mobile) {
+      height: 8px;
+      width: 8px;
+  }
+
+  @include breakpoint(mobile) {
+      height: 7px;
+      width: 7px;
+  }
+}
+
+.dots {
+    text-align:center;
+}
+
+.active {
+  background-color: $brightblue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Cards for home page */
+
+
+.card__img.closet {
+    background: url(../img/closet_small.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 175px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+	}
+}
+
+.card__img.garage {
+    background: url(../img/garage_small.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 175px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+	}
+}
+
+.card__img.ss {
+    background: url(../img/ss_small.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+	}
+}
+
+/* Closets Page */
+
+div.hero_container.closets {
+    background: url(../img/elegant.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+        @include breakpoint(medium) {
+            min-height: 500px;
+        }
+        @include breakpoint(landscape) {
+            min-height: 500px;
+        }
+
+        @include breakpoint(smaller-screen) {
+            min-height: 400px;
+        }
+
+        @include breakpoint(portrait) {
+            min-height: 375px;
+        }
+
+        @include breakpoint(small) {
+            min-height: 300px;
+        }
+
+        @include breakpoint(large-mobile) {
+            min-height: 225px;
+        }
+
+        @include breakpoint(mobile) {
+    		min-height: 175px;
+    	}
+}
+
+.card__img.belt {
+    background: url(../img/belt_rack.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.tie {
+    background: url(../img/tie_rack.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.purse {
+    background: url(../img/purse_hooks.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.hampers {
+    background: url(../img/hampers.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.jewelry {
+    background: url(../img/jewelry_tray.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.valet {
+    background: url(../img/valet_rods.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+/* Garages Page */
+
+div.hero_container.garages {
+    background: url(../img/garage_mini.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}
+
+.card__img.cabinets {
+    background: url(../img/cabinets.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.workbenches {
+    background: url(../img/workbench.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.hooks {
+    background: url(../img/hooks.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.racks {
+    background: url(../img/bike_rack.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.pegboards {
+    background: url(../img/pegboard.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.shelves {
+    background: url(../img/shelving.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+/* Small Spaces Page*/
+
+div.hero_container.small_spaces {
+    background: url(../img/pantry.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}
+
+.card__img.pantries {
+    background: url(../img/pantries.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.wine_racks {
+    background: url(../img/wine_rack.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.shoe_closets {
+    background: url(../img/shoe_closet.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.benches {
+    background: url(../img/bench.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.home_offices {
+    background: url(../img/office.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(large-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+.card__img.small_space {
+    background: url(../img/ss_small.jpg) center center;
+    background-size: cover;
+    min-height: 288px;
+
+    @include breakpoint(smaller-screen) {
+        min-height: 250px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 200px;
+    }
+
+    @include breakpoint(larger-mobile) {
+		min-height: 175px;
+	}
+
+    @include breakpoint(mobile) {
+		min-height: 150px;
+    }
+}
+
+/* Gallery, Blog, About Us and Contact Pages */
+div.hero_container.gallery {
+    background: url(../img/gallery.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}
+
+div.hero_container.blog {
+    background: url(../img/blog.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}
+
+div.hero_container.about {
+    background: url(../img/about_us.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}
+
+div.hero_container.contact{
+    background: url(../img/contact.jpg) center center;
+    background-size: cover;
+    min-height: 600px;
+
+    @include breakpoint(medium) {
+        min-height: 500px;
+    }
+    @include breakpoint(landscape) {
+        min-height: 500px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        min-height: 400px;
+    }
+
+    @include breakpoint(portrait) {
+        min-height: 375px;
+    }
+
+    @include breakpoint(small) {
+        min-height: 300px;
+    }
+
+    @include breakpoint(large-mobile) {
+        min-height: 225px;
+    }
+
+    @include breakpoint(mobile) {
+		min-height: 175px;
+	}
+}

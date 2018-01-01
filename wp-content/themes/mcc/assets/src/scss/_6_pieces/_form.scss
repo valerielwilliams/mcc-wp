@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    FORM
+\*------------------------------------*/
+
+form {
+
+
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    top: 45px;
+    transition: top 0.5s ease-in-out;
+
+    &.out-of-the-way {
+        top: 0;
+    }
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+textarea {
+    background: $putty;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 100%;
+}
+
+
+/*button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}*/

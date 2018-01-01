@@ -1,0 +1,300 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+header {
+	grid-column: 1 / span 12;
+	font-family: $sofia;
+	color: $primary;
+	position: relative;
+
+}
+
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.logo {
+	margin-top: 45px;
+
+}
+
+.logo img {
+
+	@include breakpoint(xxlarge) {
+		width: em(300px);
+	}
+
+	@include breakpoint(xlarge) {
+		width: em(300px);
+	}
+
+	@include breakpoint(regular-screen) {
+		width: em(300px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(medium) {
+		width: em(250px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(landscape) {
+		width: em(250px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(smaller-screen) {
+		width: em(200px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(portrait) {
+		width: em(200px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(small) {
+		width: em(175px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(large-mobile) {
+		width: em(160px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(mobile) {
+		width: em(150px);
+		padding-left: em(10px);
+	}
+}
+
+/*------------------------------------*\
+    #ADDRESS
+\*------------------------------------*/
+
+.vcard {
+	font-weight: $medium;
+	font-size: em(18px);
+	position: absolute;
+	top: 17%;
+	left: 80%;
+
+
+	@include breakpoint(regular-screen) {
+		font-size: em(18px);
+		left: 75%;
+		top: 17%
+	}
+
+	@include breakpoint(medium) {
+		font-size: em(16px);
+		left: 75%;
+		top: 19%
+	}
+
+	@include breakpoint(landscape) {
+		font-size: em(16px);
+		left: 75%;
+		top: 19%
+	}
+
+	@include breakpoint(smaller-screen) {
+		font-size: em(16px);
+		left: 72%;
+		top: 20%
+	}
+
+	@include breakpoint(portrait) {
+		font-size: em(16px);
+		left: 70%;
+		top: 20%
+	}
+
+	@include breakpoint(small) {
+		font-size: em(16px);
+		left: 65%;
+		top: 20%
+	}
+
+
+	@include breakpoint(large-mobile) {
+		font-size: em(14px);
+		left: 60%;
+		top: 21%
+	}
+
+	@include breakpoint(mobile) {
+		font-size: em(12px);
+		left: 53%;
+		top: 22%
+	}
+}
+
+.tel {
+	margin: 10px 0 10px 0;
+}
+
+.vcard a:link {
+	color: $link;
+	text-decoration: none;
+}
+
+.vcard a:hover{
+	color: $link;
+	text-decoration: underline;
+}
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.nav {
+	margin-top: 20px;
+
+	@include breakpoint(small) {
+		visibility: hidden;
+	}
+
+	ul {
+		@include no-bullets;
+		display: flex;
+
+		> li {
+			flex: 1;
+			font-weight: $semibold;
+			font-size: em(20px);
+			text-align: center;
+
+			@include breakpoint(smaller-screen) {
+				font-size: em(17px);
+			}
+
+			@include breakpoint(portrait) {
+				font-size: em(16px);
+			}
+
+			@include breakpoint(small) {
+				font-size: em(14px);
+			}
+
+			> a {
+				color: $primary;
+				text-decoration: none;
+
+				&:hover {
+					background: $accent;
+					color: $primary;
+
+									}
+			}
+		}
+	}
+}
+
+.contact a {
+	border: 2px solid $link;
+	padding: 5px;
+}
+
+
+/*------------------------------------*\
+    #HAMBURGER
+\*------------------------------------*/
+
+.hamburger {
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	z-index: map-get($zindex, hamburger);
+
+
+	@include breakpoint(xxlarge) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(xlarge) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(regular-screen) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(medium) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(landscape) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(smaller-screen) {
+		visibility: hidden;
+	}
+
+	@include breakpoint(portrait) {
+		visibility: hidden;
+	}
+	@include breakpoint(small) {
+		visibility: visible;
+	}
+
+	svg {
+		fill: $accent;
+		height: 30px;
+		width: 30px;
+	}
+}
+
+.mobile-nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -100%;
+	bottom: 100%;
+	transition: bottom 0.25s ease-in-out,
+		top 0.25s ease-in-out;
+	z-index: map-get($zindex, mobile-nav);
+
+	&.open {
+		bottom: 0;
+		top: 0;
+	}
+
+
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	ul {
+		@include no-bullets;
+		display: flex;
+		flex-direction: column;
+		background: rgba(0,0,0, 0.75);
+
+
+		> li {
+			flex: 1;
+			font-weight: $semibold;
+			font-size: em(20px);
+			text-align: center;
+			line-height: 2em;
+
+			> a {
+				color: $herofont;
+				text-decoration: none;
+
+				&:hover {
+					background: $accent;
+					color: $primary;
+
+									}
+			}
+		}
+	}
+
+}

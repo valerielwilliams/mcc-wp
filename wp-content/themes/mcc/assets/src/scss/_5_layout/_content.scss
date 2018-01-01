@@ -1,0 +1,345 @@
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+.main {
+    grid-column: 1 / span 12;
+    font-family: $sofia;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.hero_container h1 {
+    color: $herofont;
+    font-size: em(50px);
+    font-weight: $regular;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px;
+
+    @include breakpoint(medium) {
+        font-size: em(45px);
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(45px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(40px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(35px);
+    }
+
+    @include breakpoint(small) {
+        font-size: em(30px);
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(24px);
+    }
+
+    @include breakpoint(mobile) {
+    font-size: em(20px);
+    padding-left: 5px;
+  }
+}
+
+h2 {
+    font-weight: $regular;
+    font-size: em(24px);
+    text-align: center;
+    margin: 50px 0 50px 0;
+
+    @include breakpoint(regular-screen) {
+        font-size: em(24px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(23px);
+        padding-left: 10px;
+    }
+    @include breakpoint(medium) {
+        font-size: em(23px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(22px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(21px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(small) {
+        font-size: em(20px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(18px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: em(16px);
+        padding-left: 10px;
+        margin: 50px 0 25px 0;
+    }
+}
+
+p {
+    font-weight: $medium;
+    font-size: em(18px);
+    line-height: 1.25em;
+
+    @include breakpoint(regular-screen) {
+        font-size: em(18px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(17px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(17px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(16px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(small) {
+        font-size: em(14px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(14px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(mobile) {
+		font-size: em(12px);
+		padding-left: 10px;
+        padding-bottom: 15px;
+	}
+}
+
+a:link, a:visited {
+	color: $link;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $link;
+	text-decoration: underline;
+}
+
+
+.intro p {
+    margin-bottom: 40px;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 20px;
+    }
+}
+
+/* buttons for scheduling a consultation on Home and About pages */
+.consult {
+    text-align: center;
+}
+
+
+.consult a {
+ text-decoration : none;
+ background: $button;
+ color: $buttonfont;
+ padding: 10px;
+
+ }
+
+ .consult a:hover {
+   border-style: solid;
+   border-color: $button;
+   background: $buttonfont;
+   color: $button;
+}
+
+/* cards for Home, Closets, Garages and Small Spaces pages */
+
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card__img {
+    flex: 0 0 calc(33.33% - 30px);   /* courtesy of Stack Overflow at https://stackoverflow.com/questions/37461794/aligning-images-on-two-rows-with-flexbox */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(small) {
+        flex: 0 0 calc(50%);
+    }
+
+    @include breakpoint(large-mobile) {
+		flex: 0 0 calc(50%);
+	}
+
+    @include breakpoint(mobile) {
+		flex: 0 0 calc(75%);
+	}
+}
+
+.card__img p {
+    color: $herofont;
+    font-size: em(40px);
+    font-weight: $light;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px;
+
+    @include breakpoint(medium) {
+        font-size: em(32px);
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(32px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(28px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(27px);
+    }
+
+    @include breakpoint(small) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(mobile) {
+        font-size: em(25px);
+    }
+
+}
+
+
+/* styling for testimonials on Home, About and Contact pages */
+
+.testimonials p {
+    font-weight: $extralight;
+    font-style: $style-italic;
+    font-size: em(36px);
+    padding: 40px;
+
+    @include breakpoint(landscape) {
+        font-size: em(35px);
+        padding: 40px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(35px);
+        padding: 40px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(34px);
+        padding: 40px;
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(34px);
+        padding: 40px;
+    }
+
+    @include breakpoint(small) {
+		font-size: em(34px);
+        padding: 34px;
+	}
+
+    @include breakpoint(large-mobile) {
+		font-size: em(28px);
+        padding: 32px;
+	}
+
+    @include breakpoint(mobile) {
+		font-size: em(25px);
+        padding: 30px;
+	}
+}
+
+.testimonials p::before, .testimonials p::after {
+    content: "“";
+    position: absolute;
+    color: $accent;
+    font-size: em(100px);
+
+    @include breakpoint(landscape) {
+        font-size: em(90px);
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(90px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(85px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(85px);
+    }
+
+    @include breakpoint(small) {
+		font-size: em(85px);
+    }
+
+    @include breakpoint(large-mobile) {
+		font-size: em(80px);
+	}
+
+    @include breakpoint(mobile) {
+		font-size: em(75px);
+    }
+
+}
+
+
+.testimonials p::before {
+    top: 3rem;
+    left: 0rem;
+    z-index: -1;
+}
+
+.testimonials p::after {
+    content: "”";
+    bottom: 1rem;
+    right: 2rem;
+}
