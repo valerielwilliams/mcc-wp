@@ -1500,41 +1500,23 @@ div.hero_container.home img {
     div.hero_container.home img {
       height: 175px; } }
 
-div.hero_container.home h1 {
-  position: absolute;
-  top: 22%;
-  left: 22%; }
-  @media (max-width: 1024px) {
-    div.hero_container.home h1 {
-      top: 19%;
-      left: 20%; } }
-  @media (max-width: 1024px) {
-    div.hero_container.home h1 {
-      top: 19%;
-      left: 19%; } }
-  @media (max-width: 800px) {
-    div.hero_container.home h1 {
-      top: 17%;
-      left: 17%; } }
-  @media (max-width: 768px) {
-    div.hero_container.home h1 {
-      top: 17%;
-      left: 17%; } }
-  @media (max-width: 640px) {
-    div.hero_container.home h1 {
-      top: 13%;
-      left: 17%; } }
-  @media (max-width: 480px) {
-    div.hero_container.home h1 {
-      top: 12%;
-      left: 16%; } }
-  @media (max-width: 360px) {
-    div.hero_container.home h1 {
-      top: 12%;
-      left: 10%; } }
-
 .mySlides {
   display: none; }
+
+.mySlides a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 375px;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute; }
 
 /* The dots/bullets/indicators */
 .dot {

@@ -37,52 +37,19 @@ div.hero_container.home img {
 
 }
 
-div.hero_container.home h1 {
-    position: absolute;
-    top: 22%;
-    left: 22%;
-
-
-    @include breakpoint(medium) {
-        top: 19%;
-        left: 20%;
-    }
-    @include breakpoint(landscape) {
-        top: 19%;
-        left: 19%;
-    }
-
-    @include breakpoint(smaller-screen) {
-        top: 17%;
-        left: 17%;
-    }
-
-    @include breakpoint(portrait) {
-        top: 17%;
-        left: 17%;
-    }
-
-    @include breakpoint(small) {
-        top: 13%;
-        left: 17%;
-    }
-
-    @include breakpoint(large-mobile) {
-        top: 12%;
-        left: 16%;
-    }
-
-    @include breakpoint(mobile) {
-        top: 12%;
-        left: 10%;
-    }
-
-}
-
-
 .mySlides {
     display:none;
     }
+
+.mySlides a {
+    display: flex;
+    height: 375px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
 
 
 /* The dots/bullets/indicators */
